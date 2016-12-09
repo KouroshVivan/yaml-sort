@@ -1,8 +1,8 @@
 {
-  "name": "yaml-sortkey",
+  "name": "yaml-easysort",
   "main": "./lib/yaml-sortkey",
   "version": "0.1.0",
-  "description": "Sort YAML keys and validate YAML",
+  "description": "Sort YAML keys and validate YAML (fork with line maxWidth configurable)",
   "keywords": [
     "yaml",
     "sort",
@@ -15,7 +15,7 @@
   "activationHooks": [
     "language-yaml:grammar-used"
   ],
-  "repository": "https://github.com/akfernun/yaml-sortkeys",
+  "repository": "https://github.com/elledienne/yaml-sortkeys",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
