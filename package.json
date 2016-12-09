@@ -1,7 +1,7 @@
 {
   "name": "easysort-yaml",
   "main": "./lib/easysort-yaml",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Sort YAML keys and validate YAML (fork with line maxWidth configurable)",
   "keywords": [
     "yaml",
