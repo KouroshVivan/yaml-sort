@@ -15,7 +15,7 @@
   "activationHooks": [
     "language-yaml:grammar-used"
   ],
-  "repository": "https://github.com/elledienne/easysort-yamls",
+  "repository": "https://github.com/elledienne/easysort-yaml",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
