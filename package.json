@@ -1,7 +1,7 @@
 {
-  "name": "yaml-easysort",
-  "main": "./lib/yaml-sortkey",
-  "version": "0.1.0",
+  "name": "easysort-yaml",
+  "main": "./lib/easysort-yaml",
+  "version": "0.2.0",
   "description": "Sort YAML keys and validate YAML (fork with line maxWidth configurable)",
   "keywords": [
     "yaml",
@@ -10,12 +10,12 @@
     "autosort"
   ],
   "activationCommands": {
-    "atom-workspace": "yaml-sortkey:validate"
+    "atom-workspace": "easysort-yaml:validate"
   },
   "activationHooks": [
     "language-yaml:grammar-used"
   ],
-  "repository": "https://github.com/elledienne/yaml-sortkeys",
+  "repository": "https://github.com/elledienne/easysort-yamls",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

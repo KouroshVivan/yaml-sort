@@ -10,7 +10,7 @@ you the option to automatically sort the keys on file save.
 
 
 ### Installation
-* Install via Atom's Package manager by searching for "yaml-sortkey"
+* Install via Atom's Package manager by searching for "easysort-yaml"
 
 ### Usage
 ###### Valid Commands
