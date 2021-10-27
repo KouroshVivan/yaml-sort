@@ -1,3 +1,6 @@
+## 0.5.0 - New fork
+* Fix safeLoad and safeDump error
+
 ## 0.2.0 - Second Release (Fork)
 * Make maxWidth option configurable
 

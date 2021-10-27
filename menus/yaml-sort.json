@@ -11,11 +11,11 @@
           "submenu": [
             {
               "label": "Sort Keys",
-              "command": "easysort-yaml:sort_keys"
+              "command": "yaml-sort:sort_keys"
             },
             {
               "label": "Validate File",
-              "command": "easysort-yaml:validate_buffer"
+              "command": "yaml-sort:validate_buffer"
             }
           ]
         }

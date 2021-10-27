@@ -1,6 +1,6 @@
 'use babel';
 
-import YamlSortkey from '../lib/easysort-yaml';
+import YamlSortkey from '../lib/yaml-sort';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -12,32 +12,32 @@ describe('YamlSortkey', () => {
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('easysort-yaml');
+    activationPromise = atom.packages.activatePackage('yaml-sort');
   });
 
-  describe('when the easysort-yaml:toggle event is triggered', () => {
+  describe('when the yaml-sort:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.easysort-yaml')).not.toExist();
+      expect(workspaceElement.querySelector('.yaml-sort')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'easysort-yaml:toggle');
+      atom.commands.dispatch(workspaceElement, 'yaml-sort:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.easysort-yaml')).toExist();
+        expect(workspaceElement.querySelector('.yaml-sort')).toExist();
 
-        let yamlSortkeyElement = workspaceElement.querySelector('.easysort-yaml');
+        let yamlSortkeyElement = workspaceElement.querySelector('.yaml-sort');
         expect(yamlSortkeyElement).toExist();
 
         let yamlSortkeyPanel = atom.workspace.panelForItem(yamlSortkeyElement);
         expect(yamlSortkeyPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'easysort-yaml:toggle');
+        atom.commands.dispatch(workspaceElement, 'yaml-sort:toggle');
         expect(yamlSortkeyPanel.isVisible()).toBe(false);
       });
     });
@@ -51,11 +51,11 @@ describe('YamlSortkey', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.easysort-yaml')).not.toExist();
+      expect(workspaceElement.querySelector('.yaml-sort')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'easysort-yaml:toggle');
+      atom.commands.dispatch(workspaceElement, 'yaml-sort:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,9 +63,9 @@ describe('YamlSortkey', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let yamlSortkeyElement = workspaceElement.querySelector('.easysort-yaml');
+        let yamlSortkeyElement = workspaceElement.querySelector('.yaml-sort');
         expect(yamlSortkeyElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'easysort-yaml:toggle');
+        atom.commands.dispatch(workspaceElement, 'yaml-sort:toggle');
         expect(yamlSortkeyElement).not.toBeVisible();
       });
     });

@@ -1,6 +1,6 @@
 'use babel';
 
-import YamlSortkeyView from '../lib/easysort-yaml-view';
+import YamlSortkeyView from '../lib/yaml-sort-view';
 
 describe('YamlSortkeyView', () => {
   it('has one valid test', () => {
