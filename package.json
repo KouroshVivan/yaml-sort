@@ -1,7 +1,7 @@
 {
   "name": "yaml-sort",
   "main": "./lib/yaml-sort",
-  "version": "0.8.0",
+  "version": "0.6.0",
   "description": "Sort YAML keys and validate YAML (fork from elledienne)",
   "keywords": [
     "yaml",
